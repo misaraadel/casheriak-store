@@ -111,14 +111,15 @@ $(document).ready(function () {
       delay: 8000,
       disableOnInteraction: false,
     },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
   });
   
   var swiper = new Swiper(".swiper-products", {
     spaceBetween: 10,
+    slidesPerView: 2.1,
     loop: true,
     // autoplay: {
     //   delay: 5000,
@@ -130,15 +131,15 @@ $(document).ready(function () {
     },
     breakpoints: {
       640: {
-      slidesPerView: 1,
+      slidesPerView: 2.1,
       spaceBetween: 18,
       },
       768: {
-      slidesPerView: 1,
+      slidesPerView: 1.2,
       spaceBetween: 18,
       },
       1024: {
-        slidesPerView: 4,
+        slidesPerView: 4.2,
         spaceBetween: 18,
       },
     },
