@@ -144,6 +144,34 @@ $(document).ready(function () {
       },
     },
   });
+  
+  var swiper = new Swiper(".swiper-category", {
+    spaceBetween: 10,
+    slidesPerView: 3.3,
+    loop: true,
+    // autoplay: {
+    //   delay: 5000,
+    //   disableOnInteraction: false,
+    // },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      640: {
+      slidesPerView: 2.1,
+      spaceBetween: 18,
+      },
+      768: {
+      slidesPerView: 1.2,
+      spaceBetween: 18,
+      },
+      1024: {
+        slidesPerView: 6.2,
+        spaceBetween: 18,
+      },
+    },
+  });
 
   var swiper = new Swiper(".prodcutDetailsThumbsSlider", {
     spaceBetween: 10,
